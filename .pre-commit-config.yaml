@@ -2,14 +2,14 @@ repos:
 -   repo: local
     hooks:
     -   id: black-jupyter
-        files: src/
+        files: src/|tests/
         args:
           - --line-length=120
         name: black-jupyter
         entry: python -m black --check --diff --color
         language: system
     -   id: mypy
-        files: src/
+        files: src/|tests/
         args:
           - --strict
         name: mypy
