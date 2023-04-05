@@ -12,6 +12,7 @@ repos:
         files: src/|tests/
         args:
           - --strict
+          - --explicit-package-bases
         name: mypy
         entry: python -m mypy
         language: system
