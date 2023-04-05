@@ -8,3 +8,10 @@ repos:
         name: black-jupyter
         entry: python -m black --check --diff --color
         language: system
+    -   id: mypy
+        files: src/
+        args:
+          - --strict
+        name: mypy
+        entry: python -m mypy
+        language: system
