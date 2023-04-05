@@ -28,3 +28,7 @@ steps:
 - script: |
     ruff check ./
   displayName: 'ruff'
+
+- script: |
+    black ./ --check
+  displayName: 'black'
