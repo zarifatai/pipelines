@@ -1,4 +1,4 @@
-class App:
+class MyObject:
     def __init__(self) -> None:
         print("App initialized")
 
@@ -10,7 +10,7 @@ class App:
 
 
 if __name__ == "__main__":
-    app = App()
+    app = MyObject()
     length = 25.0
     height = 30.0
     width = 15.0
