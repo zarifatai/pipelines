@@ -1,19 +1,22 @@
 class MyObject:
-    def __init__(self) -> None:
-        print("App initialized")
+    def __init__(self, length: float, height: float, width: float) -> None:
+        self.length = length
+        self.height = height
+        self.width = width
 
-    def calculate_area(self, length: float, height: float) -> float:
-        return length * height
+    def calculate_area(self) -> float:
+        return self.length * self.height
 
-    def calculate_volume(self, length: float, height: float, width: float) -> float:
-        return length * height * width
+    def calculate_volume(self) -> float:
+        return self.length * self.height * self.width
 
 
 if __name__ == "__main__":
-    app = MyObject()
     length = 25.0
     height = 30.0
     width = 15.0
 
-    print(app.calculate_area(length, height))
-    print(app.calculate_volume(length, height, width))
+    obj = MyObject(length, height, width)
+
+    print(obj.calculate_area())
+    print(obj.calculate_volume())
