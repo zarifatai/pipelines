@@ -10,6 +10,9 @@ class MyObject:
     def calculate_volume(self) -> float:
         return self.length * self.height * self.width
 
+    def get_attributes(self) -> tuple[float, float, float]:
+        return (self.length, self.height, self.width)
+
 
 if __name__ == "__main__":
     length = 25.0
