@@ -1,3 +1,6 @@
+import typing
+
+
 class MyObject:
     def __init__(self, length: float, height: float, width: float) -> None:
         self.length = length
@@ -9,6 +12,9 @@ class MyObject:
 
     def calculate_volume(self) -> float:
         return self.length * self.height * self.width
+
+    def get_attributes(self) -> typing.Tuple[float, float, float]:
+        return (self.length, self.height, self.width)
 
 
 if __name__ == "__main__":
